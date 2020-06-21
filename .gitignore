@@ -1,2 +1,9 @@
 /venv
 .idea
+
+sources.xls
+
+/alphax/crawled
+/alphax/visited
+
+**/__pycache__
