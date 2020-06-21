@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import scrapy
+from .spider import Crawler
 
 
-class JobbermanSpider(scrapy.Spider):
+class JobbermanSpider(Crawler):
     name = 'jobberman'
     allowed_domains = ['jobberman.com']
-    start_urls = ['http://jobberman.com/']
+    static_url = 'http://jobberman.com/'
 
-    def parse(self, response):
-        pass
+    def __init__(self, **kwargs):
+        super(JobbermanSpider, self).__init__(**kwargs)
